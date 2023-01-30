@@ -23,7 +23,8 @@
     "mocha": "^10.2.0"
   },
   "dependencies": {
+    "nodemailer": "^6.9.1",
     "ping-monitor": "github:qawemlilo/ping-monitor#feature/channels",
-    "nodemailer": "^6.9.1"
+    "slack-notify": "^2.0.6"
   }
 }
