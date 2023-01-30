@@ -1,4 +1,4 @@
-# ping-monitor-channels
+# [ping-monitor](https://github.com/qawemlilo/ping-monitor) Channels
 
 Ideas on how to add notification channels with ping-monitor
 
