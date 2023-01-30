@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://theworkcrowd.com",
+    "name": "TWC",
+    "intervalUnits": "minutes",
+    "interval": 0.1
+  },
+  {
+    "url": "https://ragingflame.co.za",
+    "name": "Raging Flame",
+    "intervalUnits": "minutes",
+    "interval": 0.1
+  }
+]
