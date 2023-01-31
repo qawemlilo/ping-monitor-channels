@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 
-const SlackNotify = require("slack-notify");
+const SlackNotify = require('slack-notify');
 
 class SlackChannel {
   constructor(options) {
@@ -15,39 +15,39 @@ class SlackChannel {
       this.slack.alert({
         channel: this.options.slack_channel,
         icon_url: this.options.icon_url,
-        text: `${res.website} ${msg || "Downtime Incidence"}`,
+        text: `${res.website} ${msg || 'Downtime Incidence'}`,
         attachments: [
           {
-            color: "#FF0000",
+            color: '#FF0000',
             blocks: [
               {
-                type: "header",
+                type: 'header',
                 text: {
-                  type: "plain_text",
-                  text: msg || "Downtime Incidence",
+                  type: 'plain_text',
+                  text: msg || 'Downtime Incidence',
                   emoji: true,
                 },
               },
               {
-                type: "divider",
+                type: 'divider',
               },
               {
-                type: "context",
+                type: 'context',
                 elements: [
                   {
-                    type: "mrkdwn",
+                    type: 'mrkdwn',
                     text: `*URL: * ${res.website}`,
                   },
                   {
-                    type: "mrkdwn",
+                    type: 'mrkdwn',
                     text: `*Status Code: * ${res.statusCode}`,
                   },
                 ],
               },
               {
-                type: "section",
+                type: 'section',
                 text: {
-                  type: "mrkdwn",
+                  type: 'mrkdwn',
                   text: `*Message: * ${msg || res.responseMessage}`,
                 },
               },
@@ -60,7 +60,7 @@ class SlackChannel {
     }
   };
 
-  name = "slacker";
+  name = 'slacker';
 
   async up(res, state) {
     console.log(`#${this.name}: ${res.website} is up`);
@@ -73,7 +73,7 @@ class SlackChannel {
   }
 
   async stop(res, state) {
-    this.notify(res, "Monitoring Stopped");
+    this.notify(res, 'Monitoring Stopped');
 
     console.log(`#${this.name}: ${res.website} has stopped`);
   }
@@ -85,7 +85,7 @@ class SlackChannel {
   }
 
   async timeout(error, res) {
-    this.notify(res, "Timed Out");
+    this.notify(res, 'Timed Out');
 
     console.log(`#${this.name}:`, error);
   }

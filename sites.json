@@ -1,13 +1,13 @@
 [
   {
-    "url": "https://theworkcrowd.com",
-    "name": "TWC",
+    "url": "https://google.com",
+    "name": "Google",
     "intervalUnits": "minutes",
     "interval": 0.1
   },
   {
-    "url": "https://ragingflame.co.za",
-    "name": "Raging Flame",
+    "url": "https://github.com",
+    "name": "Github",
     "intervalUnits": "minutes",
     "interval": 0.1
   }

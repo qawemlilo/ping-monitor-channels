@@ -1,6 +1,6 @@
 # [ping-monitor](https://github.com/qawemlilo/ping-monitor) Channels
 
-Ideas on how to add notification channels with ping-monitor
+Notification channels for ping [ping-monitor](https://github.com/qawemlilo/ping-monitor).
 
 ```javascript
 const Monitor = require('ping-monitor');
@@ -10,13 +10,13 @@ const Monitor = require('ping-monitor');
 // channel example
 class Channel {
 
-  constructor(options) {
+  constructor(config) {
     /*** 
     
-      do something with the options
+      do something with the config
       e.g.
       
-      const transporter = require("nodemailer").createTransport(options);
+      const transporter = require("nodemailer").createTransport(config);
       
       this.transporter = transporter;
       
